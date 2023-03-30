@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#header__img-2, #head__tablet-img, #head__tablet-img-x2, #head__desktop-img, 
+#head__desktop-img-x2, #gal__mobile-1-x2, #gal__tablet-1, #gal__tablet-1-x2, 
+#gal__desktop-1, #gal__desktop-1-x2, #sec__mobile-2-x2, #sec__mobile-3-x2, 
+#sec__tablet-2, #sec__tablet-2-x2, #sec__tablet-3, #sec__tablet-3-x2, 
+#sec__desktop-2, #sec__desktop-2-x2, #sec__desktop-3, #sec__desktop-3-x2 {
+    display: none;
+}
+
+
+img {
+    width: 100%;
+}
+
+.black {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.img__box {
+  width: 100%;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__content {
+  gap: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3.2rem 1.6rem 12rem 1.6rem;
+}
+
+.header__title {
+  max-width: 34.3rem;
+}
+
+.title {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 5.5rem;
+
+  text-transform: uppercase;
+  color: #151515;
+}
+
+.header__par {
+    max-width: 34.3rem;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+}
+
+.location__div {
+    display: flex;
+    width: 26rem;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.location {
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Width: 20.4rem;
+    height: 7.2rem;
+    transition: all.3s;
+}
+
+.anchor {
+    padding: 24;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 3.63636px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.arrow__div {
+    background: #D5966C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.6rem;
+    height: 7.2rem;
+    transition: all.3s;
+}
+
+.arrow {
+    width: 0.8rem;
+    height: 2.4rem;
+}
+
+.location__div:hover .location {
+    background: #D5966C;
+}
+
+.location__div:hover .arrow__div {
+    background: #151515;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1.6rem 12rem 1.6rem;
+}
+
+.first__title {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    color: #151515;
+    margin-top: 2.5rem;
+}
+
+.first__par {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: darkgrey;
+    margin-top: 2.1rem;
+    margin-bottom: 3.2rem;
+}
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.second__image-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.second__text {
+    background-color: black;
+}
+
+.second__title {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: white;
+    margin: 4.8rem 2.4rem 2.4rem 2.4rem;
+}
+
+.second__par {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    margin: 0 2.4rem 4.7rem 2.4rem;
+}
+
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer__content {
+    background-color: black;
+    margin: 4.8rem 3.2rem;
+}
+
+.footer__social {
+    margin-top: 3.8rem;
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.social__logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo {
+    width: 11rem;
+    height: 4rem;
+}
+
+.footer__par {
+    margin-top: 3.8rem;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+}
+
+/* Mobile x2 Version */
+@media screen and (min-width: 375px) {
+    #header__image-id, #sec__mobile-2, #sec__mobile-3, #gal__mobile {
+        display: none;
+    }
+
+    #gal__mobile-1-x2, #sec__mobile-2-x2, #sec__mobile-3-x2, #header__img-2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #gal__mobile-1-x2, #sec__mobile-2-x2, #sec__mobile-3-x2, #header__img-2 {
+        display: none;
+    }
+
+    #gal__tablet-1, #sec__tablet-2, #sec__tablet-3, #head__tablet-img {
+        display: block;
+    }
+
+
+    .header__extra-div {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .image__box {
+        position: relative;
+        width: 60%;
+        max-height: 70rem;
+    }
+
+    .header__content {
+        gap: 4.8rem;
+        width: 34rem;
+        position: absolute;
+        left: 52%;
+    }
+
+    #head__tablet-img {
+        width: 100%;
+        height: 70rem;
+    }
+
+    .title {
+        font-size: 70px;
+        line-height: 65px;
+    }
+
+    .header__text {
+        gap: 4.8rem;
+    }
+
+    .first {
+        display: flex;
+        height: 100%;
+       
+    }
+    
+    .gallery {
+        margin: 12rem 4rem 12rem 4rem;
+    }
+
+    .first__image-box {
+        order: 2;
+        width: 240%;
+    }
+
+    #gal__tablet-1, #sec__tablet-2, #sec__tablet-3 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .first__text {
+        margin-right: 6.8rem;
+    }
+
+    .second {
+        margin-top: 1.1rem;
+        gap: 1.1rem;
+    }
+
+    .second__image-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 11px;
+      
+    }
+    #sec__tablet-2 {
+        grid-area: 1/1/3/2;
+        
+    }
+
+    #sec__tablet-3 {
+        grid-area: 1/2/2/3;
+        
+    }
+
+    .second__text {
+        grid-area: 2/2/3/3;
+        padding: 8.5rem 2.8rem;
+    }
+
+    .footer__content {
+        display: flex;
+        margin: 5.6rem 4rem;
+        align-items: flex-start;
+        gap: 6.4rem;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .footer__par {
+        margin-top: 0;
+    }
+
+    .footer__social {
+        margin-top: 0;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    #gal__tablet-1, #sec__tablet-2, #sec__tablet-3, #head__tablet-img {
+        display: none;
+    }
+
+    #gal__tablet-1-x2, #sec__tablet-2-x2, #sec__tablet-3-x2, #head__tablet-img-x2 {
+        display: block;
+    }
+
+    #gal__tablet-1-x2, #sec__tablet-2-x2, #sec__tablet-3-x2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #head__tablet-img-x2 {
+        width: 100%;
+        height: 70rem;
+    }
+
+
+    
+    .header__content{
+      
+        left: 52%;
+
+    }
+    
+    #sec__tablet-2-x2 {
+        grid-area: 1/1/3/2;
+        
+    }
+
+    #sec__tablet-3-x2 {
+        grid-area: 1/2/2/3;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #gal__tablet-1-x2, #sec__tablet-2-x2, #sec__tablet-3-x2, #head__tablet-img-x2 {
+        display: none;
+    }
+
+    #gal__desktop-1, #sec__desktop-2, #sec__desktop-3, #head__desktop-img {
+        display: block;
+    }
+
+    #gal__desktop-1, #sec__desktop-2, #sec__desktop-3 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #sec__desktop-2 {
+        grid-area: 1/1/3/2;
+        
+    }
+
+    #sec__desktop-3 {
+        grid-area: 1/2/2/3;
+    }
+
+    #head__desktop-img {
+        height: 80rem;
+    }
+
+    
+    .header__extra-div {
+
+        width: 80%;
+        height: 80rem;
+        align-items: normal;
+
+    }
+
+    .image__box {
+
+        height: 100%;
+    }
+
+    .black {
+        width: 40%;
+        height: 80rem;
+        display: block;
+        background-color: black;
+    }
+
+    .header__title {
+        margin-right: 10rem;
+        position: relative;
+        right: 46rem;
+        width: 51.4rem;
+    }
+
+    .header__content {
+        top: 15%;
+    }
+
+    .title {
+        color: white;
+        mix-blend-mode: difference;
+        font-size: 96px;
+        line-height: 88px;
+        
+    }
+
+    .header__text {
+        position: absolute;
+        left: 90%;
+    }
+
+    .first__image-box {
+        order: 2;
+        width: 180%;
+    }
+
+    .footer__content {
+        margin: 8rem 16.5rem;
+        gap: 14rem;
+    }
+
+    .logo {
+        width: 16rem;
+        height: 5.8rem;
+    }
+
+    .footer__par {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}
+
+
+/* 2K & 4K resolution */
+
+@media screen and (min-width: 2048px) {
+
+    body{
+        zoom: 1.5;
+    }
+}
+
+
+@media screen and (min-width: 3840px) {
+
+    body{
+        zoom: 2;
+    }
+}
